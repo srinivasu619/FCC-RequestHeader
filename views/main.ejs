@@ -1,0 +1,66 @@
+<html>
+  <head>
+      <title>Request Header Parser Microservice</title>
+<!--       <link href="public/style.css" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+      <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/ce4b6769-3731-4439-b5b2-51c59606d844%2Fhttp.svg?1498835827352" />
+      <style>
+        *{
+            font-family: 'Rationale', sans-serif;
+            box-sizing:border-box;
+            letter-spacing:0.2em;
+            background-color:#9aa7af;
+         }
+        #mainConatiner{
+              width: 60%;  
+              margin: 0 auto;
+              padding-left: 50px;
+            }
+        
+/*         code{
+              color: deeppink;
+              background-color: lightpink;
+              padding: 8px;
+              border-radius: 0.8em;
+        } */
+        #mainHeader{
+          display:flex;
+          padding:4px;
+        }
+        #mainHeader > img{
+          flex:1;
+          height:80px;
+        }
+        #mainHeader > h1{
+          flex:5
+        }
+        #content{
+          padding:20px;
+           color: aliceblue;
+          width:60%;
+          margin:0 auto;
+        }
+        span >img{
+          height:20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="mainConatiner">
+      <div id="mainHeader">
+        <img src="https://cdn.glitch.com/ce4b6769-3731-4439-b5b2-51c59606d844%2Fhttp.svg?1498835827352">
+        <h1>
+          Request Header Parser Microservice
+        </h1>
+      </div>
+      <div id="content">
+        <code>
+          {<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>IP ADDRESS&nbsp;:</strong>&nbsp;&nbsp;<%= info.ip %>,<br><br>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Operating System&nbsp;:</strong>&nbsp;&nbsp;<%= info.OSInfo %><br><br>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Language&nbsp;:</strong>&nbsp;&nbsp;<%= info.language %><br><br>
+          }
+        </code>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+  <head>
+      <title>Request Header Parser Microservice</title>
+<!--       <link href="public/style.css" rel="stylesheet"> -->
+      <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/ce4b6769-3731-4439-b5b2-51c59606d844%2Fhttp.svg?1498835827352" />
+      <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+      <style>
+        *{
+            font-family: 'Rationale', sans-serif;
+            box-sizing:border-box;
+            letter-spacing:0.2em;
+            background-color:#9aa7af;
+         }
+        #mainConatiner{
+              width: 60%;  
+              margin: 0 auto;
+              padding-left: 50px;
+            }
+        
+        code{
+              color: deeppink;
+              background-color: lightpink;
+              padding: 8px;
+              border-radius: 0.8em;
+        }
+        #mainHeader{
+          display:flex;
+          padding:4px;
+        }
+        #mainHeader > img{
+          flex:1;
+          height:80px;
+        }
+        #mainHeader > h1{
+          flex:5
+        }
+        #content{
+          padding:20px;
+        }
+        span >img{
+          height:20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="mainConatiner">
+      <div id="mainHeader">
+        <img src="https://cdn.glitch.com/ce4b6769-3731-4439-b5b2-51c59606d844%2Fhttp.svg?1498835827352">
+        <h1>
+          Request Header Parser Microservice
+        </h1>
+      </div>
+      <div id="content">
+        <p>
+          <h3>
+            User Story:
+        </h3>
+        I can get the IP address, language and operating system for my browser.
+        </p>
+        <p>
+          <h3>
+            Example Usage:
+          </h3>
+          <code>https://the-request-header-parser.glitch.me/whoami</code>
+        </p>
+        <p>
+          The above route will give the information about the request
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
